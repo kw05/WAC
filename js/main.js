@@ -302,9 +302,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     guessedWords[guessedWords.length - 1] = currentWordArr;
 
-    const lastLetterEl = document.getElementById(availableSpace - 1);
-
-    lastLetterEl.innerHTML = "";
+    const lastLetterEl = document.getElementById(String(availableSpace - 1));
+    
+    lastLetterEl.textContent = "";
     availableSpace = availableSpace - 1;
   }
 
